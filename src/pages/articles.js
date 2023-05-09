@@ -3,7 +3,8 @@ import React, { useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import article1 from "../../public/images/articles/create loading screen in react js.jpg";
+import stateManagement from "../../public/images/articles/stateManagement.webp";
+import pythonFacebook from "../../public/images/articles/pythonFacebook.webp";
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -77,19 +78,23 @@ const articles = () => {
         />
         <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
           <FeaturedArticle
-            title="How to Build a Custom Pagination Component in ReactJS"
-            summary="In this article, we will build a custom pagination component in ReactJS. We will use the React Hooks API to build this component."
-            time={"5 min read"}
-            link={"/"}
-            img={article1}
+            title="Google’s Recommended Flutter State Management"
+            summary="In this Article We Will Talk about what Google recommends for state management; well, it’s not! And what makes it complicated is not the community choices but the fact that we are implementing a workaround for not having true Full-MVVM. Thus, it’s still wrapped up in what the MVC pattern does well and not well and how to fix it, and how to dependency inject things."
+            time={"6 min read"}
+            link={
+              "https://faun.pub/googles-recommended-flutter-state-management-ed25712dfc66"
+            }
+            img={stateManagement}
           />
 
           <FeaturedArticle
-            title="How to Build a Custom Pagination Component in ReactJS"
-            summary="In this article, we will build a custom pagination component in ReactJS. We will use the React Hooks API to build this component."
-            time={"5 min read"}
-            link={"/"}
-            img={article1}
+            title="Python Script to Download Facebook Videos"
+            summary="In this tutorial, we are going to see the Method to Download Facebook Videos using Python3."
+            time={"4 min read"}
+            link={
+              "https://python.plainenglish.io/python-script-to-download-facebook-videos-dc2e2d1c6df6"
+            }
+            img={pythonFacebook}
           />
         </ul>
         <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 ">
@@ -97,40 +102,64 @@ const articles = () => {
         </h2>
         <ul>
           <Article
-            title={"How to Build a Custom Pagination Component in ReactJS"}
-            date={"5/12/2001"}
-            link={"/"}
-            img={article1}
+            title={
+              "en mind-blowing AI websites you probably didn’t know existed."
+            }
+            date={"Aug 15, 2022"}
+            link={
+              "https://faun.pub/ten-mind-blowing-ai-websites-you-probably-didnt-know-existed-3eb2ac7a9110"
+            }
           />
           <Article
-            title={"How to Build a Custom Pagination Component in ReactJS"}
-            date={"5/12/2001"}
-            link={"/"}
-            img={article1}
+            title={"The Only Lists You Need For Your Interview Preparation"}
+            date={"Aug 9, 2022"}
+            link={
+              "https://faun.pub/the-only-lists-you-need-for-your-interview-preparation-780d972c030a"
+            }
           />
           <Article
-            title={"How to Build a Custom Pagination Component in ReactJS"}
-            date={"5/12/2001"}
-            link={"/"}
-            img={article1}
+            title={"Roadmap to becoming a Flutter developer."}
+            date={"Aug 7, 2022"}
+            link={
+              "https://anshgoyal749.medium.com/roadmap-to-becoming-a-flutter-developer-46431853145b?source=user_profile---------2----------------------------"
+            }
           />
           <Article
-            title={"How to Build a Custom Pagination Component in ReactJS"}
-            date={"5/12/2001"}
-            link={"/"}
-            img={article1}
+            title={"Master Dynamic Programming With Patterns"}
+            date={"Aug 24, 2022"}
+            link={
+              "https://anshgoyal749.medium.com/master-dynamic-programming-with-patterns-b25f1fb1297c?source=user_profile---------5----------------------------"
+            }
           />
           <Article
-            title={"How to Build a Custom Pagination Component in ReactJS"}
-            date={"5/12/2001"}
-            link={"/"}
-            img={article1}
+            title={
+              "How to write a Bash script from Windows without having Linux installed"
+            }
+            date={"Aug 22, 2022"}
+            link={
+              "https://anshgoyal749.medium.com/how-to-write-a-bash-script-from-windows-without-having-linux-installed-61a9646a8594?source=user_profile---------6----------------------------"
+            }
           />
           <Article
-            title={"How to Build a Custom Pagination Component in ReactJS"}
-            date={"5/12/2001"}
-            link={"/"}
-            img={article1}
+            title={"A Developer’s Guide to Flutter"}
+            date={"Aug 20, 2022"}
+            link={
+              "https://anshgoyal749.medium.com/a-developers-guide-to-flutter-330f2eba0118?source=user_profile---------7----------------------------"
+            }
+          />
+          <Article
+            title={"10 Chrome Extensions To Boost Productivity By 269%"}
+            date={"Jul 10, 2022"}
+            link={
+              "https://anshgoyal749.medium.com/10-chrome-extensions-to-boost-productivity-by-269-89bf78eeeae7?source=user_profile---------8----------------------------"
+            }
+          />
+          <Article
+            title={"Pusher Docs for creating real time Messaging with Flutter"}
+            date={"Jun 1, 2022"}
+            link={
+              "https://anshgoyal749.medium.com/pusher-docs-for-creating-real-time-messaging-with-flutter-363df86c78d2?source=user_profile---------9----------------------------"
+            }
           />
         </ul>
       </main>

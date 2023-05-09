@@ -4,10 +4,16 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
+import PortfolioV1 from "../../public/images/projects/portfolio.png";
+import Instagram from "../../public/images/projects/instagram.jpeg";
+import Diabetes from "../../public/images/projects/diabetes.jpg";
+import FaceMask from "../../public/images/projects/facemask.png";
+import WineQuality from "../../public/images/projects/winequality.png";
+import ChatApp from "../../public/images/projects/chatapp.jpg";
+import PortfolioV2 from "../../public/images/projects/PortFolio-V2.png";
 
 const FramerImage = motion(Image);
 
@@ -133,66 +139,81 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title={"Crypto Screener Application"}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link={"/"}
+                img={PortfolioV2}
                 type={"Featured Project"}
-                img={project1}
-                github={"/"}
+                title={"Portfolio"}
+                summary={
+                  "A portfolio website for myself with complete deployment"
+                }
+                link={"https://portfolio-v2-zeta-liart.vercel.app/"}
+                github={"https://github.com/anshgoyal1/Portfolio-v2"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title={"Crypto Screener Application"}
-                link={"/"}
-                type={"Featured Project"}
-                img={project1}
-                github={"/"}
+                title={"Instagram Clone"}
+                type={"Flutter Application"}
+                img={Instagram}
+                github={"https://github.com/anshgoyal1/Instagram_clone"}
+                link={"https://github.com/anshgoyal1/Instagram_clone"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              {" "}
               <Project
-                title={"Crypto Screener Application"}
-                link={"/"}
-                type={"Featured Project"}
-                img={project1}
-                github={"/"}
+                title={"Chat App"}
+                type={"Chat Mobile Application"}
+                img={ChatApp}
+                github={"https://github.com/anshgoyal1/chat-app"}
+                link={"https://github.com/anshgoyal1/chat-app"}
               />
             </div>
-
+          </div>
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 mt-20">
             <div className="col-span-12">
               <FeaturedProject
-                title={"Crypto Screener Application"}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link={"/"}
+                img={Diabetes}
                 type={"Featured Project"}
-                img={project1}
-                github={"/"}
+                title={"Diabetes Prediction"}
+                summary={"A machine learning model to predict diabetes"}
+                link={"https://diabetes-predictor1.herokuapp.com/"}
+                github={"https://github.com/anshgoyal1/diabetes_prediction"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title={"Crypto Screener Application"}
-                link={"/"}
-                type={"Featured Project"}
-                img={project1}
-                github={"/"}
+                title={"Face Mask Detection"}
+                type={"Deep Learning and Computer Vision Project"}
+                img={FaceMask}
+                github={"https://github.com/anshgoyal1/Face_Mask_Detector"}
+                link={"https://github.com/anshgoyal1/Face_Mask_Detector"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title={"Crypto Screener Application"}
-                link={"/"}
-                type={"Featured Project"}
-                img={project1}
-                github={"/"}
+                title={"Wine Quality Prediction"}
+                type={"Machine Learning"}
+                img={WineQuality}
+                github={"https://github.com/anshgoyal1/wine_quality_prediction"}
+                link={"https://github.com/anshgoyal1/wine_quality_prediction"}
               />
             </div>
+          </div>
+
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 mt-20">
+            <div className="col-span-12">
+              <FeaturedProject
+                img={PortfolioV1}
+                type={"Featured Project"}
+                title={"PortFolio-V1"}
+                summary={
+                  "A portfolio website for myself with complete deployment"
+                }
+                link={"https://ansh-0portfolio.netlify.app/"}
+                github={"https://github.com/anshgoyal1/my-portfolio"}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12"></div>
+            <div className="col-span-6 sm:col-span-12"></div>
           </div>
         </Layout>
       </main>

@@ -7,10 +7,16 @@ import {
   GithubIcon,
   LinkedInIcon,
   MoonIcon,
-  PinterestIcon,
+  MediumIcon,
   SunIcon,
   TwitterIcon,
 } from "./Icons";
+import {
+  SiLeetcode,
+  SiCodeforces,
+  SiCodechef,
+  SiGeeksforgeeks,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
@@ -97,7 +103,7 @@ const NavBar = () => {
         <nav className="flex items-center justify-center flex-wrap">
           {/* TODO: Add your social media links here */}
           <motion.a
-            href="/"
+            href="https://twitter.com/AnshGoy88302382"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -106,7 +112,7 @@ const NavBar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://github.com/anshgoyal1"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -115,7 +121,7 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://www.linkedin.com/in/ansh-goyal-03936a191/"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -123,23 +129,60 @@ const NavBar = () => {
           >
             <LinkedInIcon />
           </motion.a>
+
           <motion.a
-            href="/"
-            target="_blank"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3 bg-light rounded-full"
-          >
-            <PinterestIcon />
-          </motion.a>
-          <motion.a
-            href="/"
+            href="https://dribbble.com/anshgoyal1"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 ml-3"
           >
             <DribbbleIcon />
+          </motion.a>
+          <motion.a
+            href="https://anshgoyal749.medium.com/"
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 ml-3 sm:mx-1"
+          >
+            <MediumIcon />
+          </motion.a>
+          <motion.a
+            href="https://leetcode.com/runtime_terrorist/"
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 ml-3 sm:mx-1"
+          >
+            <SiLeetcode />
+          </motion.a>
+          <motion.a
+            href="https://www.codechef.com/users/coder_cop1"
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 ml-3 sm:mx-1"
+          >
+            <SiCodechef />
+          </motion.a>
+          <motion.a
+            href="https://codeforces.com/profile/madara_uchiha1245"
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 ml-3 sm:mx-1"
+          >
+            <SiCodeforces />
+          </motion.a>
+          <motion.a
+            href="https://auth.geeksforgeeks.org/user/anshgoyalche19/"
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 ml-3 sm:mx-1"
+          >
+            <SiGeeksforgeeks />
           </motion.a>
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -193,7 +236,7 @@ const NavBar = () => {
           <nav className="flex items-center justify-center flex-wrap mt-2">
             {/* TODO: Add your social media links here */}
             <motion.a
-              href="/"
+              href="https://twitter.com/AnshGoy88302382"
               target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -202,7 +245,7 @@ const NavBar = () => {
               <TwitterIcon />
             </motion.a>
             <motion.a
-              href="/"
+              href="https://github.com/anshgoyal1"
               target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -211,7 +254,7 @@ const NavBar = () => {
               <GithubIcon />
             </motion.a>
             <motion.a
-              href="/"
+              href="https://www.linkedin.com/in/ansh-goyal-03936a191/"
               target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -219,23 +262,60 @@ const NavBar = () => {
             >
               <LinkedInIcon />
             </motion.a>
+
             <motion.a
-              href="/"
-              target="_blank"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3 bg-light rounded-full  sm:mx-1"
-            >
-              <PinterestIcon />
-            </motion.a>
-            <motion.a
-              href="/"
+              href="https://dribbble.com/anshgoyal1"
               target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 ml-3 sm:mx-1"
             >
               <DribbbleIcon />
+            </motion.a>
+            <motion.a
+              href="https://anshgoyal749.medium.com/"
+              target="_blank"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 ml-3 sm:mx-1"
+            >
+              <MediumIcon />
+            </motion.a>
+            <motion.a
+              href="https://leetcode.com/runtime_terrorist/"
+              target="_blank"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 ml-3 sm:mx-1"
+            >
+              <SiLeetcode />
+            </motion.a>
+            <motion.a
+              href="https://www.codechef.com/users/coder_cop1"
+              target="_blank"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 ml-3 sm:mx-1"
+            >
+              <SiCodechef />
+            </motion.a>
+            <motion.a
+              href="https://codeforces.com/profile/madara_uchiha1245"
+              target="_blank"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 ml-3 sm:mx-1"
+            >
+              <SiCodeforces />
+            </motion.a>
+            <motion.a
+              href="https://auth.geeksforgeeks.org/user/anshgoyalche19/"
+              target="_blank"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 ml-3 sm:mx-1"
+            >
+              <SiGeeksforgeeks />
             </motion.a>
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}

@@ -30,19 +30,26 @@ const Skills = () => {
           whileHover={{ scale: 1.05 }}
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2"
         >
-          Web
+          Web, Mobile
         </motion.div>
         {/* TODO: ADD Skill */}
-        <Skill name={"Html"} x={"22vw"} y={"2vw"} />
-        <Skill name={"CSS"} x={"-5vw"} y={"-10vw"} />
+        <Skill name={"Html"} x={"15vw"} y={"2vw"} />
+        <Skill name={"CSS"} x={"14vw"} y={"-10vw"} />
         <Skill name={"Javascript"} x={"20vw"} y={"6vw"} />
         <Skill name={"ReactJs"} x={"0vw"} y={"12vw"} />
-        <Skill name={"NextJs"} x={"-20vw"} y={"-15vw"} />
+        <Skill name={"NextJs"} x={"15vw"} y={"-15vw"} />
         <Skill name={"Flutter"} x={"15vw"} y={"-12vw"} />
         <Skill name={"NodeJs"} x={"32vw"} y={"-5vw"} />
         <Skill name={"ExpressJs"} x={"0vw"} y={"-20vw"} />
         <Skill name={"MongoDB"} x={"-25vw"} y={"18vw"} />
         <Skill name={"Firebase"} x={"-18vw"} y={"18vw"} />
+        <Skill name={"C++"} x={"10vw"} y={"8vw"} />
+        <Skill name={"Python"} x={"15vw"} y={"12vw"} />
+        <Skill name={"Bootstap"} x={"0vw"} y={"17vw"} />
+        <Skill name={"Git"} x={"-17vw"} y={"12vw"} />
+        <Skill name={"Dart"} x={"-2vw"} y={"-12vw"} />
+        <Skill name={"APIs"} x={"-20vw"} y={"-12vw"} />
+        <Skill name={"Linux"} x={"-45vw"} y={"-12vw"} />
       </div>
     </>
   );

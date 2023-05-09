@@ -10,12 +10,14 @@ const Details = ({
   address,
   work,
   skills,
+  style,
 }) => {
   const ref = useRef(null);
   return (
     <li
       ref={ref}
       className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between  md:w-[80%]"
+      style={style}
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -62,7 +64,7 @@ const Experience = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             position={"Software Engineer"}
-            companylink="www.speedlabs.com"
+            companylink="https://www.speedlabs.in/"
             company="Speedlabs"
             time={"May 2022 - July 2022"}
             address={"Mumbai, India"}
@@ -70,15 +72,23 @@ const Experience = () => {
             skills={
               "Skills: React.js · Express.js · MongoDB · Flutter · Dart · Node.js"
             }
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
           />
           <Details
             position={"Software Engineer"}
-            companylink="www.speedlabs.com"
-            company="Speedlabs"
-            time={"May 2022 - July 2022"}
-            address={"Mumbai, India"}
-            work="The project involved building a Psychometry test module and integrating it into an app using REST APIs and Flutter. The module included features such as proctoring, pausing the test, and autosaving the time taken for each question. Additionally, the developer explored Pusher API documentation and integrated it into the Flutter app to create a live chat application. This project demonstrated the developer's proficiency in Flutter, Dart, and REST APIs, as well as their ability to implement complex features and integrate third-party tools. The successful integration of the Psychometry test module and the implementation of various features were notable achievements of the project.The project involved building a Psychometry test module and integrating it into an app using REST APIs and Flutter. The module included features such as proctoring, pausing the test, and autosaving the time taken for each question. Additionally, the developer explored Pusher API documentation and integrated it into the Flutter app to create a live chat application. This project demonstrated the developer's proficiency in Flutter, Dart, and REST APIs, as well as their ability to implement complex features and integrate third-party tools. The successful integration of the Psychometry test module and the implementation of various features were notable achievements of the project.
-Skills: React.js · Express.js · MongoDB · Flutter · Dart · Node.js"
+            companylink="https://egov.org.in/"
+            company="Egov Foundation"
+            time={"June 2023 - Present"}
+            address={"Bangalore, India"}
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
           />
         </ul>
       </div>
