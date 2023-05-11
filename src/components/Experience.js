@@ -39,7 +39,9 @@ const Details = ({
           {time} | {address}
         </span>
         <p className="font-medium w-full text-sm">{work}</p>
-        <p className="text-primary">{skills}</p>
+        <p className="text-primary dark:text-primaryDark mt-7 font-bold">
+          {skills}
+        </p>
       </motion.div>
     </li>
   );
