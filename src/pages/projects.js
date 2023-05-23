@@ -14,6 +14,7 @@ import FaceMask from "../../public/images/projects/facemask.png";
 import WineQuality from "../../public/images/projects/winequality.png";
 import ChatApp from "../../public/images/projects/chatapp.jpg";
 import PortfolioV2 from "../../public/images/projects/PortFolio-V2.png";
+import Ecommerce from "../../public/images/projects/E_commerce.jpg";
 
 const FramerImage = motion(Image);
 
@@ -137,6 +138,20 @@ const projects = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                img={Ecommerce}
+                type={"Featured Project"}
+                title={"E-commerce"}
+                summary={
+                  "An E-commerce flutter application with complete deployment, complete authentication, backend and payment gateway integration"
+                }
+                link={
+                  "https://drive.google.com/file/d/1WFDsoiK_uxFaw92zFhs1KbEIiln6z9NA/view?usp=sharing"
+                }
+                github={"https://github.com/anshgoyal1/E-commerce-Flutter"}
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 img={PortfolioV2}
